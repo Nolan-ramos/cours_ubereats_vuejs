@@ -37,10 +37,11 @@ export default {
 
 <style lang="scss">
     .restaurant--card{
-        width:calc(100%/3 - 50px);
+        width:100%;
         &--image{
             background-image: url("https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zNzg4MDJiMC1jNTI4LTQ4MjktYjBiNS0wY2M2NDBkZjYzY2QuanBlZw==");
             height:200px;
+            width:100%;
             background-size: cover;
             background-position: center;
         }
@@ -54,7 +55,7 @@ export default {
                     font-weight: 700;
                 }
                 &--note{
-                    background: #772CE8;
+                    background: #01AE6D;
                     color:white;
                     font-weight: 700;
                     padding:10px;

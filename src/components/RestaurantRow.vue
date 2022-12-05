@@ -2,7 +2,9 @@
   <div class="restaurant--row">
     <h2 class="restaurant--row--title">Nos restaurants</h2>
     <div class="restaurant--row--card">
-        <RestaurantCard v-for="(card, index) in three_restaurant" :info_restaurant="card" :key="index"/>
+        <router-link v-for="(restaurant, index) in three_restaurant" :key="index" :to="{name: 'Restaurant', params: {name: restaurant.name}}">
+            <RestaurantCard :info_restaurant="restaurant"/>
+        </router-link>
     </div>
   </div>
 </template>
@@ -34,6 +36,10 @@ export default {
         &--card{
             display: flex;
             justify-content: space-between;
+            a{
+                display: block;
+                width:calc(100%/3 - 50px);
+            }
         }
     }
 </style>
